@@ -1,0 +1,91 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Splitchar</title>
+	<link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dancing+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/onepage-scroll.css">
+	<link rel="stylesheet" type="text/css" href="css/prism.css">
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<section class="section home carrot">
+		<img src="wce.png" width="100%"></img>
+		<a class="arrow"></a>
+		</section>
+
+		<section class="section carrot">
+		<h1>What is World Computer Exchange?</h1>
+		<p>WCE is a global education and environmental nonprofit connecting youth in developing countries to the skills, opportunities and understanding of computers and the internet. Since 2000, WCE has aimed to, and continues to provide:
+		<ul>
+			<li>Organizational capacity building in education, technology and e-waste</li>
+			<li>Low-cost refurbished computers and networking equipment and needed peripherals</li>
+			<li>Preloaded content in education, health, technology, e-waste, and agriculture</li>
+			<li>On-site training by professional volunteer teachers and techies in tech, e-waste and C4G</li>
+			<li>Appropriate and sustainable e-waste reuse and disposal in developing countries</li>
+		</ul>
+		</p>
+		<a class="arrow"></a>
+		</section>
+
+		<section class="section carrot">
+		<h1>Computers For Girls Initiative</h1>
+		<p> The goal of Computers For Girls (C4G) is to co-develop, field test and disseminate engaging tools to assist organizations and schools that are working to improve STEM education for 1 million girls in developing countries.  In the first year these tools will be suggested and co-developed by the C4G management Team, C4G staff and seven teachers from schools in Kenya, Liberia, Malawi, South Africa, Tanzania, Zambia and Zimbabwe.  In the second year, these tools will be further field tested and disseminated more widely by the seven teachers to all teachers at four nearby schools.  In the third year the tools will be further disseminated via the iEARN global project platform and via WCE capacity building, preloaded content and local training to the 1,000 WCE Partner organizations in 78 developing countries to impact a million girls. </p>
+		<a class="arrow"></a>
+		</section>
+
+		<section class="section carrot">
+		<h1>Over the three years of this initiative, C4G will field test and disseminate through the following 9 outputs:</h1>
+		<ul>
+			<li>An iEARN student-learning project on increasing girls’ access to computers and STEM education</li>
+			<li>C4G curriculum modules to increase girls’ access to computers and STEM education</li>
+			<li>C4G teacher orientation and coaching to increase girls’ access to computers and STEM</li>
+			<li>C4G content and teacher resources loaded into a mobile app and future WCE computers </li>
+			<li>WCE country volunteers and eCorps training teams adapted to help C4G capacity building </li>
+			<li>iEARN country offices with capacity to improve girls’ access to computers and STEM</li>
+			<li>Documentation of best practices to improve girls’ access to computers and STEM ed</li>
+			<li>C4G members recruited via social media to sustain updating of content and resources</li>
+			<li>C4G online training product with either iEARN, Training/etc or New Horizons</li>
+		<a class="arrow"></a>
+		</section>
+
+		<section class="section green">
+		year1
+		</section>
+
+	</div>
+
+
+	
+	<script src="//code.jquery.com/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="js/jquery.onepage-scroll.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".main").onepage_scroll({
+			   sectionContainer: "section",
+			   easing: "ease",
+			   animationTime: 1000,
+			   pagination: true,
+			   updateURL: false,  
+			   beforeMove: function(index) {},
+			   afterMove: function(index) {},
+			   loop: false,
+			   keyboard: true,        
+			   responsiveFallback: false
+			});
+			$('.arrow').click(function(){
+				$(".main").moveDown();
+			})
+
+		}) // Ready
+	</script>
+</body>
+</html>
